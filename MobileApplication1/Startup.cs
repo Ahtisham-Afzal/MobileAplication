@@ -53,8 +53,8 @@ namespace MobileAplication
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
-                // add this for controller
-                endpoints.MapControllers();
+                
+                endpoints.MapControllers();   // add this for controller
             });
         }
     }
