@@ -70,64 +70,63 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
+/* ----------------------------------------===========================================================================----------------------- */
 
-/*--------own styling------------*/
-form {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.value-button {
+.form-content .form-items {
+    border: 3px solid #464720;
+    padding: 40px;
     display: inline-block;
-    border: 1px solid #ddd;
-    margin: 0px;
-    width: 40px;
-    height: 20px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 11px 0;
-    background: #eee;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    width: 100%;
+    min-width: 540px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
-    .value-button:hover {
-        cursor: pointer;
+.form-content h3 {
+    color: #464720;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+    .form-content h3.form-title {
+        margin-bottom: 30px;
     }
 
-form #decrease {
-    margin-right: -4px;
-    border-radius: 8px 0 0 8px;
+
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=url], .form-content select {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
 }
 
-form #increase {
-    margin-left: -4px;
-    border-radius: 0 8px 8px 0;
+
+.btn-primary {
+    background-color: #464720;
+    outline: none;
+    border: 0px;
+    box-shadow: none;
+
 }
 
-form #input-wrap {
-    margin: 0px;
-    padding: 0px;
-}
-
-input#number {
-    text-align: center;
-    border: none;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    margin: 0px;
-    width: 40px;
-    height: 40px;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+        background-color: #495056;
+        outline: none !important;
+        border: none !important;
+        box-shadow: none;
+    }

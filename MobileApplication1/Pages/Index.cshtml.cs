@@ -29,7 +29,7 @@ namespace MobileAplication.Pages
 
         public void OnGet()
         {
-            Mobiles = MobileService.getMobileRecord();
+           
         }
     }
 }
